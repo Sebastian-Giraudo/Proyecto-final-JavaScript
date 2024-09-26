@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de juego para fonoaudiología</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header bg-primary text-white text-center py-3">
+        <h1>FONOCHI - Tienda de juego para fonoaudiología</h1>
+    </header>
+
+    <!-- Main -->
+    <main class="main container mt-4">
+        <div class="productos-carrito-grid">
+
+            <!-- Productos -->
+
+            <section class="contenedor-productos">
+
+                <div class="productos" id="productos">
+                <!-- Productos completados con JS -->
+                </div>
+
+            </section>
+
+            <!-- Carrito -->
+
+            <section class="carrito-section">
+                <h3>Carrito</h3>
+
+                <div class="carrito">
+
+                    <div class="carrito-vacio" id="carrito-vacio">
+                        <p>El carrito está vacío</p>
+                    </div>
+
+                    <div class="carrito-productos d-none" id="carrito-productos">                        
+                        <!-- Carrito completado con JS -->
+                    </div>
+
+                    <div class="carrito-total">
+                        <h5>Total: <span id="carrito-total">$0</span></h5>                        
+                    </div>
+
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer bg-light text-center py-3 mt-4">
+        <p>&copy; 2024 FONOCHI. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="main.js"></script>
+</body>
+</html>
+
