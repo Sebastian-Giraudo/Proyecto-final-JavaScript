@@ -1,0 +1,38 @@
+[
+    {
+        "id": "producto01",
+        "titulo": "Fonología Gourmet",
+        "precio": 90000,
+        "img": "./img/img1.jpg"
+    },
+    {
+        "id": "producto02",
+        "titulo": "La mudanza",
+        "precio": 90000,
+        "img": "./img/img2.jpg"
+    },
+    {
+        "id": "producto03",
+        "titulo": "Conexión semántica",
+        "precio": 45000,
+        "img": "./img/img3.jpg"
+    },
+    {
+        "id": "producto04",
+        "titulo": "Lenguaje en acción",
+        "precio": 48000,
+        "img": "./img/img4.jpg"
+    },
+    {
+        "id": "producto05",
+        "titulo": "La colmena léxica",
+        "precio": 90000,
+        "img": "./img/img5.jpg"
+    },
+    {
+        "id": "producto06",
+        "titulo": "Abro & Cuento",
+        "precio": 90000,
+        "img": "./img/img6.jpg"
+    }
+]

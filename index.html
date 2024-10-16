@@ -28,27 +28,69 @@
 
             </section>
 
-            <!-- Carrito -->
+<!-- Carrito -->
 
             <section class="carrito-section">
                 <h3>Carrito</h3>
 
                 <div class="carrito">
-
                     <div class="carrito-vacio" id="carrito-vacio">
                         <p>El carrito está vacío</p>
                     </div>
 
-                    <div class="carrito-productos d-none" id="carrito-productos">                        
+                    <div class="carrito-productos d-none" id="carrito-productos">
                         <!-- Carrito completado con JS -->
                     </div>
 
                     <div class="carrito-total">
-                        <h5>Total: <span id="carrito-total">$0</span></h5>                        
+                        <h5>Total: <span id="carrito-total">$0</span></h5>
                     </div>
 
+                    <!-- Botón de Finalizar compra -->
+                    <button type="button" class="btn btn-success mt-3" id="btn-finalizar" data-bs-toggle="modal" data-bs-target="#modalCompra">
+                        Finalizar compra
+                    </button>
                 </div>
             </section>
+
+            <!-- Modal de confirmación de compra -->
+
+            <div class="modal fade" id="modalCompra" tabindex="-1" aria-labelledby="modalCompraLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalCompraLabel">Confirmar compra</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h6>Resumen de tu compra:</h6>
+                            <div id="modal-carrito-productos">
+                                <!-- Detalle de la compra -->
+                            </div>
+                            <h5>Total: <span id="modal-carrito-total"></span></h5>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                            <button type="button" class="btn btn-primary" id="confirmar-compra">Confirmar compra</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+        <!-- Ícono del carrito -->
+
+        <div id="carrito-toggle" class="carrito-icon">
+            <img src="/img/carrito-icono.jpg" alt="Carrito">
+            <span id="carrito-cantidad">0</span>
+        </div>
+
+        <!-- Sección para el mensaje de agradecimiento -->
+         
+        <div id="mensaje-compra" class="text-center my-4 d-none">
+            <h4>¡Gracias por tu compra!</h4>
+            <p>Tu pedido ha sido procesado correctamente.</p>
         </div>
     </main>
 
